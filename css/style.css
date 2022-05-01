@@ -23,13 +23,15 @@ body {
 .header {
   background: #d4d4d4;
   position: relative;
-  max-width: 90vw;
   margin: auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 1rem 2rem;
   z-index: 1;
+  border-bottom-color:#ff652f;
+  border-bottom-width: 3px;
+  border-bottom-style: solid;
 }
 .header a {
   text-decoration: none;
@@ -188,7 +190,16 @@ body {
   text-transform: uppercase;
 }
 
-/* NEW STUFFS */
+/* NEW STUFF */
+
+.footer {
+  margin: 20px 0px;
+  padding: 20px 10px;
+  border-top-color:#ff652f;
+  border-top-width: 3px;
+  border-top-style: solid;
+  background-color: #c4c4c4;
+}
 
 /* nav menu button */
 .menu-btn {
