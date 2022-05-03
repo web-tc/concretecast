@@ -263,7 +263,7 @@ body {
     padding: 1rem;
     line-height: 3rem;
     overflow-y: auto;
-    transform: translateY(-100vh);
+    transform: translateY(-160vh);
     transition: transform 0.3s ease-out;
   }
   .menu-items.open {
