@@ -282,7 +282,7 @@ body {
     padding: 1rem;
     line-height: 2rem;
     overflow-y: auto;
-    transform: translateY(-150vh);
+    transform: translateY(-160vh);
     transition: transform 0.3s ease-out;
   }
   .logo {
