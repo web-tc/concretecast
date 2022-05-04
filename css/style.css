@@ -1,5 +1,5 @@
 /* globals */
-@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Titillium+Web:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Titillium+Web:wght@400;700&display=swap");
 
 * {
   margin: 0;
@@ -23,11 +23,11 @@ body {
 .header {
   background: #d4d4d4;
   position: relative;
-  margin: auto;
+  /*margin: auto;*/
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem 2rem;
+  padding: 1rem 2rem 1rem 0.5rem;
   z-index: 1;
   border-bottom-color:#ff652f;
   border-bottom-width: 3px;
@@ -41,7 +41,7 @@ body {
   list-style: none;
 }
 .logo {
-  font-size: 2rem;
+  max-width: 40vw;
 }
 .menu-items {
   display: flex;
@@ -192,6 +192,21 @@ body {
 
 /* NEW STUFF */
 
+.main-content {
+  border: #427dad 1px solid;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  width: min(96%, 980px);
+  margin-inline: auto;
+}
+.main-content h1,h2 {
+  color: #676767;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+.main-content p {
+  margin-bottom: 20px;
+}
 .footer {
   margin: 20px 0px;
   padding: 20px 10px;
@@ -250,7 +265,11 @@ body {
   .menu-btn {
     display: flex;
   }
-
+  .header {
+    position: sticky;
+    top: 0;
+    max-height: fit-content;
+  }
   .header .menu-items {
     position: absolute;
     height: 100vh;
@@ -261,22 +280,27 @@ body {
     background: #d4d4d4;
     display: block;
     padding: 1rem;
-    line-height: 3rem;
+    line-height: 2rem;
     overflow-y: auto;
-    transform: translateY(-100vh);
+    transform: translateY(-150vh);
     transition: transform 0.3s ease-out;
+  }
+  .logo {
+    max-height: 10vh;
   }
   .menu-items.open {
     transform: translateY(0);
   }
 
   .menu-items li {
-    margin: 15px 10px;
+    margin: 5px 10px;
+    padding: 0.25rem 0.5rem;
   }
   .menu-items li a {
     padding: 0 1rem;
     display: block;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
+    font-weight: 600;
   }
   .menu-items li:hover {
     background-color: transparent;
@@ -329,5 +353,15 @@ body {
   }
   .col .mega-links li {
     margin: 0;
+  }
+}
+
+@media screen and (max-width: 810px) {
+  .blog .content {
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 5vh;
+  }
+  .blog .content div {
+    margin-bottom: 5vh;
   }
 }
