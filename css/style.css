@@ -30,7 +30,7 @@ body {
   padding: 1rem 2rem 1rem 0.5rem;
   z-index: 1;
   border-bottom-color:#ff652f;
-  border-bottom-width: 3px;
+  border-bottom-width: 4px;
   border-bottom-style: solid;
 }
 .header a {
@@ -192,12 +192,41 @@ body {
 
 /* NEW STUFF */
 
+#slideshow {
+  width: 100vw;
+  height: clamp(30vh, 35vh, 40vh);
+  position: relative;
+}
+#slideshow > img {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+#leader-wrapper {
+  position: relative;
+}
+#leader {
+  position: absolute;
+  top: clamp(-30vh, -35vh, -40vh);
+  width: 50vw;
+  background: rgba(128,128,128, 0.75);
+  padding: 10px 10px 20px 20px;
+}
+#leader h1 {
+  padding-bottom: 20px;
+}
+#leader h3 {
+  /* font-weight: 700; */
+  line-height: 1.5;
+  padding: 10px 0px;
+}
 .main-content {
-  border: #427dad 1px solid;
+  /* border: #427dad 1px solid; */
   margin-top: 1rem;
   margin-bottom: 1rem;
-  width: min(96%, 980px);
-  margin-inline: auto;
+  width: min(96%, 960px);
+  /* margin-inline: auto; */
+  margin-left: 20px;
 }
 .main-content h1,h2 {
   color: #676767;
@@ -205,6 +234,7 @@ body {
   margin-bottom: 1rem;
 }
 .main-content p {
+  font-weight: 700;
   margin-bottom: 20px;
 }
 .footer {
@@ -261,7 +291,7 @@ body {
 }
 
 /* MEDIA QUERY */
-@media screen and (max-width: 970px) {
+@media screen and (max-width: 970px), (max-height: 800px) {
   .menu-btn {
     display: flex;
   }
@@ -287,6 +317,21 @@ body {
   }
   .logo {
     max-height: 10vh;
+  }
+  #leader-wrapper {
+    position: static;
+  }
+  #leader {
+    position: static;
+    width: 100vw;
+    padding: 10px 0px;
+  }
+  #leader h1 {
+    text-align: center;
+    background-color: #313131;
+  }
+  #leader h3 {
+    padding: 10px 10px;
   }
   .menu-items.open {
     transform: translateY(0);
