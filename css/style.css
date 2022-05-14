@@ -198,12 +198,30 @@ body {
   border-top: 30px;
   border-style: solid;
   border-top-color: transparent;
+  transition: display 3s;
+}
+.dropdown-tel-num li {
+  padding-bottom: 3px;
 }
 .dropdown-tel-num li:hover {
   background-color: var(--dark-gray);
 }
 .dropdown:hover .dropdown-tel-num {
   display: block;
+  animation: fadeIn 0.2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% {
+    display: none;
+    top: 80%;
+    opacity: 0;
+  }
+  100% {
+    display: block;
+    top: 100%;
+    opacity: 1;
+  }
 }
 
 /* section */
