@@ -194,14 +194,20 @@ body {
   margin-left: 20px;
   z-index: 1;
   font-size: xx-large;
-  border: 0px solid white;
+  border: 0px solid var(--light-gray);
   border-top: 30px;
   border-style: solid;
   border-top-color: transparent;
-  transition: display 3s;
 }
 .dropdown-tel-num li {
   padding-bottom: 3px;
+}
+.dropdown-tel-num li span {
+  width: 50px;
+  /*clear: left;*/
+  float: left;
+  text-align: center;
+  padding-right: 2px;
 }
 .dropdown-tel-num li:hover {
   background-color: var(--dark-gray);
