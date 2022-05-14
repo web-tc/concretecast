@@ -204,7 +204,6 @@ body {
 }
 .dropdown-tel-num li span {
   width: 50px;
-  /*clear: left;*/
   float: left;
   text-align: center;
   padding-right: 2px;
