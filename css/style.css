@@ -1,11 +1,17 @@
 /* globals */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Titillium+Web:wght@400;700&display=swap");
 
+:root {
+  --orange-hl: #ff652f;
+  --light-gray: #d4d4d4;
+  --dark-gray: #676767;
+  
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
 }
 
 /*
@@ -14,9 +20,10 @@ orange : #ff6700
 
 body {
   font-family: Montserrat, sans-serif;
-  background: #d4d4d4;
+  background: var(--light-gray);
   color: #ffffff;
   min-height: 100vh;
+  overflow-x: hidden;
 }
 
 /* header */
@@ -29,7 +36,7 @@ body {
   justify-content: space-between;
   padding: 1rem 2rem 1rem 0.5rem;
   z-index: 1;
-  border-bottom-color:#ff652f;
+  border-bottom-color: var(--orange-hl);
   border-bottom-width: 4px;
   border-bottom-style: solid;
 }
@@ -52,7 +59,7 @@ body {
   transition: background 0.3s ease-in-out;
 }
 .menu-items li:hover {
-  background-color: #ff652f;
+  background-color: var(--orange-hl);
 }
 
 /* dropdown */
@@ -173,6 +180,32 @@ body {
   color: #ff652f;
 }
 
+#tel-num {
+  color: var(--orange-hl);
+  padding: 0px 10px;
+}
+.dropdown-tel-num {
+  display: none;
+  position: absolute;
+  left: -160px;
+  background-color: var(--light-gray);
+  min-width: 300px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  margin-left: 20px;
+  z-index: 1;
+  font-size: xx-large;
+  border: 0px solid white;
+  border-top: 30px;
+  border-style: solid;
+  border-top-color: transparent;
+}
+.dropdown-tel-num li:hover {
+  background-color: var(--dark-gray);
+}
+.dropdown:hover .dropdown-tel-num {
+  display: block;
+}
+
 /* section */
 .section {
   position: absolute;
@@ -196,7 +229,7 @@ body {
 /* NEW STUFF */
 
 #slideshow {
-  width: 100vw;
+  width: 100%;
   height: clamp(30vh, 35vh, 40vh);
   position: relative;
 }
