@@ -3,8 +3,8 @@
 
 :root {
   --orange-hl: #ff652f;
-  --light-gray: #d4d4d4;
-  --dark-gray: #676767;
+  --light-gray: #b8b8b8;
+  --dark-gray: #686868;
   
 }
 
@@ -23,6 +23,7 @@ body {
   background: var(--light-gray);
   color: #ffffff;
   min-height: 100vh;
+  width: 100vw;
   overflow-x: hidden;
 }
 
@@ -286,13 +287,15 @@ body {
   margin-left: 20px;
 }
 .main-content h1,h2 {
-  color: #676767;
-  font-weight: 700;
+  color: var(--dark-gray);
+  font-weight: bolder;
   margin-bottom: 1rem;
 }
 .main-content p {
-  font-weight: 700;
-  margin-bottom: 20px;
+  font-weight: bolder;
+  font-size: larger;
+  margin-right: 30px;
+  margin-bottom: 2rem;
 }
 
 .flex-content {
@@ -432,7 +435,7 @@ body {
     background-color: #313131;
   }
   #leader h3 {
-    padding: 10px 10px;
+    padding: 10px 20px 10px 10px;
   }
   .menu-items.open {
     transform: translateY(0);
@@ -504,10 +507,15 @@ body {
 
 @media screen and (max-width: 810px) {
   .blog .content {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: none;
+    display: flex;
+    flex-wrap: wrap;
     margin-bottom: 5vh;
   }
   .blog .content div {
     margin-bottom: 5vh;
+    justify-content: space-between;
+    width: 45%;
+    flex-grow: 1;
   }
 }
