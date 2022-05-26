@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+    crossorigin="anonymous" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script type="text/javascript" src="https://livejs.com/live.js"></script>
+  <link rel="stylesheet" href="/css/style.css" />
+  <script src="/js/main.js" defer></script>
+  <script>
+    $(function () {
+      $('#header-frag').load('/assets/header.frag.html', () => configureMenu());
+      $('#footer-frag').load('/assets/footer.frag.html');
+    });
+  </script>
+  <title>Concrete Cast UK</title>
+</head>
+
+<body>
+  <header id="header-frag" class="header"></header>
+
+  <div class="main-content" style="overflow-y: hidden;">
+    <h1>Fence Posts</h1>
+    <img src="/img/p1-conc-fence-post-small.jpg" style="width: 25%; float: right; margin: 0px 10px;">
+    <p>Our best selling fence posts are considered the best by our clients - wholesale as well as retail.</p>
+  </div>
+  <a href="/pages/products.html"><span style="margin-left: 20px;">&lt; Back to Products</span></a>
+
+  <footer id="footer-frag" class="footer">
+</body>
+
+<script type="text/javascript">
+</script>
+
+</html>

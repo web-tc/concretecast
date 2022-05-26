@@ -4,6 +4,7 @@
 :root {
   --orange-hl: #ff652f;
   --light-gray: #b8b8b8;
+  --lighter-gray: #c4c3c4;
   --dark-gray: #686868;
   
 }
@@ -306,7 +307,7 @@ body {
 }
 .product-card {
   margin: 10px;
-  background-color: #c4c4c4;
+  background-color: var(--lighter-gray);
   border-radius: 10px;
   box-shadow: 0 2px 20px rgba(0, 0, 0, 0.4);
   overflow: hidden;
@@ -330,24 +331,25 @@ body {
   font-weight: 700;
   line-height: 1.5;
 }
-.card-body > button {
+.card-body button {
   margin-top: 30px;
   font-size: 18px;
   padding: 5px 10px;
   border: none;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
 }
-.card-body > button:hover {
+.card-body button:hover {
   color: #ff652f;
 }
 
 .footer {
+  width: 100vw;
   margin: 20px 0px;
   padding: 20px 10px;
   border-top-color:#ff652f;
   border-top-width: 3px;
   border-top-style: solid;
-  background-color: #c4c4c4;
+  background-color: var(--lighter-gray);
 }
 
 /* nav menu button */
