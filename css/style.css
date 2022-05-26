@@ -28,6 +28,16 @@ body {
   overflow-x: hidden;
 }
 
+a:link, a:visited {
+  color: var(--dark-gray);
+  font-weight: 700;
+  font-size: large;
+}
+
+a:hover {
+  color: var(--orange-hl);
+}
+  
 /* header */
 .header {
   background: #d4d4d4;
