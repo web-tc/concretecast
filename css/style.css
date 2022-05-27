@@ -133,6 +133,8 @@ a:hover {
 .blog .content {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  padding-right: 20px;
+    padding-right: 20px;;;
 }
 .content .col {
   display: flex;
@@ -212,7 +214,8 @@ a:hover {
   border-top-color: transparent;
 }
 .dropdown-tel-num li {
-  padding-bottom: 3px;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 .dropdown-tel-num li span {
   width: 50px;
@@ -360,6 +363,19 @@ a:hover {
   border-top-width: 3px;
   border-top-style: solid;
   background-color: var(--lighter-gray);
+}
+
+#contact-details-grid {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: left;
+  align-items: center;
+  column-gap: 10px;
+  row-gap: 10px;
+}
+
+#contact-details-grid div {
+  text-align: left;
 }
 
 /* nav menu button */
@@ -529,5 +545,11 @@ a:hover {
     justify-content: space-between;
     width: 45%;
     flex-grow: 1;
+  }
+
+  #contact-details-grid div {
+    justify-content: left;
+    padding-left: 10px;
+    margin-bottom: 0px;
   }
 }
