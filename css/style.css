@@ -378,6 +378,14 @@ a:hover {
   text-align: left;
 }
 
+#loc-map {
+    display: block;
+    width: 90%;
+    height: 450px;
+    border: 2px solid var(--orange-hl);
+    margin: 0 auto;
+  }
+
 /* nav menu button */
 .menu-btn {
   position: relative;
